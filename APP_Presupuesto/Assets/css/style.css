@@ -1,0 +1,125 @@
+/*GENERAL*/
+body {
+  font-family: 'Bree Serif', serif;
+  color: #444444;
+
+}
+
+a {
+  color: #24D1FF;
+}
+
+a:hover {
+  color: #5faee3;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bree Serif', serif;
+}
+
+/*HEADER*/
+#header{
+    width: 100%;    
+    height: 55vh;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #24D1FF, #33FFB5);
+    
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: black;
+}
+
+#header #dif{
+    color: white;
+}
+
+#header li {
+    width: 30%;
+    margin-top: 5px;
+    align-self: center;
+    
+}
+
+#black.list-group-item {
+    background-color: #004c51;
+    color: white; 
+}
+
+p{
+    margin: 5px;
+}
+
+#porcentaje {
+    color: aliceblue;
+    background-color: #004c51;
+    height: 35px; width: 65px;
+    margin-left: inherit; margin-right: inherit;
+    border-radius: 5px; 
+}
+
+#porcentaje p{
+    margin: 0px;
+    padding-top: 5px;
+    
+}
+
+/*FORMULARIOS*/
+#formularios{
+    text-align: center;
+    
+}
+
+#formularios form{
+    width: 50%;
+    padding: 10px;
+    align-self: center;
+}
+
+#descripcion.form-control {
+    margin-top: 25px;
+}
+
+#monto.form-control{
+    margin-top: 25px;
+}
+
+#formularios button{
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom right, #24D1FF, #33FFB5);
+    border-radius: 5px; 
+    border: none;
+}
+
+#formularios button.btn-secondary{
+    margin-bottom: 10px;
+    width: 200px;
+    
+}
+
+#formularios li{
+    margin: 5px;
+    padding: inherit;
+    width: 400px;
+    align-self: center;
+    font-size: 22px; 
+    
+}
+
+#formulario li.button{
+    margin: 0px;
+}
+
+#formularios pre{
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Bree Serif', serif;
+    color:  #004c51; 
+}
