@@ -6,9 +6,9 @@ function mostrarfecha(fecha) {
     var meses = new Array ("Enero", "Febrero", "Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
     
     var date = new Date();
-    var mostrar = meses[date.getMonth()] + " " + date.getFullYear();
+    var mostrar = meses[date.getMonth()] + " " + date.getFullYear(); /*Sustituye el numero del mes por el nombre en base al arreglo meses*/
     
-    var contenido = "<h1>" + mostrar + "</h1>";
+    var contenido = "<h1>" + mostrar + "</h1>"; /*Mes y año que se insertara en el html*/
     div.innerHTML = contenido;
     
 }
