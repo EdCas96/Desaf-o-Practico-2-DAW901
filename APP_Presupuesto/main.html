@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0, user-scalable=no">
+    <title>Presupuesto mensual</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   
+    <section id="header">
+        <div class="container">
+            <h1>Presupuesto de</h1>
+            <div id="fecha"></div>
+            <h1 id="diferencia"></h1><!--Aqui ira el dinero-->
+            
+            <ul class="list-group">
+                <li class="list-group-item" id="black"></li>
+                <li class="list-group-item" id="white"></li>
+            </ul>
+            
+            <p> Porcentaje de gastos: </p> 
+            <p id="porcentaje"></p>
+           
+        </div>
+    </section>
+    
+    <section id="formularios">
+     <div class="container">
+      <div class="row content">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Transacción</h1>
+            <form name="formulario">
+                <div class="form-group">
+                <select id="formgroup" class="form-control form" onchange="opcion()">
+                    <option>Ingreso</option>
+                    <option >Egreso</option>
+                </select>
+                </div>
+                <div class="form-goup">
+                    <input class="form-control" id="descripcion" placeholder="Descpripcion" required}>
+                    <span class="errordescrip" id="errordescrip"></span>
+                </div>
+                <div class="form-goup">
+                    <input type="number" class="form-control" id="monto" placeholder="Monto" required>
+                    <span class="errormonto" id="errormonto"></span>
+                </div>
+            </form>
+            <a href="#" class=""><button type="submit" value="agregar" name="agregar" class="btn btn-dark" onclick="validacion();limpiar()">Agregar</button></a>
+            
+        </div>
+          <div class="col-lg-6 order-1 order-lg-2 tabcontainer">
+              <div class="btn-group btn-group-lg" role="tab" id="tabbutton">
+                    <button type="button" class="btn btn-secondary" onclick="show(0,'004c51')">Ingresos</button>
+                    <button type="button" class="btn btn-secondary"onclick="show(1,'004c51')">Egresos</button>
+              </div>
+              <div class="tablist">
+                <ul class="list-group" id="contenedor_ingreso">             
+                </ul>
+              </div>
+              <div class="tablist">
+                <ul class="list-group" id="contenedor_egreso">
+                </ul>
+              </div>
+                
+        </div>
+        
+
+        </div>
+      </div>
+
+    </section>
+     <script src="Assets/js/script.js"></script>
+</body>
+</html>
